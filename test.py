@@ -20,13 +20,17 @@ def test(filename):
     cases = cases_module.cases
 
     all_correct = True
-    for args, sol in cases.items():
+    for i, pair in cases.items():
+        args = pair[0]
+        sol = pair[1]
         tst = module.solution(*args)
         if tst != sol:
-            print("ERROR: expected %s but got %s for args=%s" % (sol, tst, args))
+            print("FAILED TEST CASE(%d): for input=%s\n\texpected %s(%s) \
+but got %s(%s)\n" \
+                  % (i, args, sol, type(sol).__name__, tst, type(tst).__name__))
             all_correct = False
     if (all_correct):
-        print("PASS: all test cases passed")
+        print("PASS: all test cases passed!")
 
 
 if __name__ == "__main__":

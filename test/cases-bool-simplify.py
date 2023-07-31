@@ -1,8 +1,8 @@
 cases = {
-    (True, True): True,
-    (True, False): False,
-    (False, True): True,
-    (False, False): True,
+    0: ((True, True), True),
+    1: ((True, False), False),
+    2: ((False, True), True),
+    3: ((False, False), True),
 }
 
 '''import importlib
