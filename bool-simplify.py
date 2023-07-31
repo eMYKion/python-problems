@@ -18,10 +18,7 @@ def func(a, b):
 
 
 def func_simple(a, b):
-    if (a):
-        return b
-    else:
-        return True
+    pass
 
 
 #ignore this code

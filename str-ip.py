@@ -7,7 +7,7 @@ find and return the last octet as an integer.
 '''
 
 def last_octet(addr):
-    return int(addr.split('.')[-1])
+    pass
 
         
 #ignore this code
