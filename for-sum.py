@@ -2,6 +2,8 @@
 The function add_all is given nums, a list of integers, and returns
 the sum of all integers in nums. However, there is one incorrect line in the
 code. Can you find the error and fix it?
+
+HINT: Just replace one part of the incorrect line with something else.
 '''
 
 def add_all(nums):

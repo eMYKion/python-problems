@@ -1,13 +1,14 @@
 '''
-An IP address is a string "X.X.X.X" where each octet X is a number 0-255
+An IP address is a string "X.X.X.X" where each 'octet' X is a number 0-255
 (inclusive).
 
-Given an IP address as a string addr,
+In the function last_octet(), given an IP address as a string (addr)
 find and return the last octet as an integer.
 '''
 
 def last_octet(addr):
-    pass
+    #YOUR CODE HERE
+    return None
 
         
 #ignore this code
