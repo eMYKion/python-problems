@@ -11,7 +11,7 @@ Example 2:
 A = [1], B =[43, 1]
 sandwich of A and B = [1, 43, 1, 1]
 
-Example 2:
+Example 3:
 A = [], B =[10,8,6]
 sandwich of A and B = [10, 8, 6]
 '''
