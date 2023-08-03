@@ -26,8 +26,8 @@ def test(filename):
         sol = pair[1]
         tst = module.solution(*(copy.deepcopy(args)))
         if tst != sol:
-            print("FAILED TEST CASE(%d): for input=%s\n\texpected %s(%s) \
-but got %s(%s)\n" \
+            print("FAILED TEST CASE(%d): for input=%r\n\texpected %r(%s) \
+but got %r(%s)\n" \
                   % (i, args, sol, type(sol).__name__, tst, type(tst).__name__))
             all_correct = False
     if (all_correct):
