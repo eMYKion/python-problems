@@ -3,6 +3,7 @@ import os
 import sys
 import itertools
 import argparse
+import copy #deepcopy
 
 def get_args():
     parser = argparse.ArgumentParser(description='Runs some test cases')
@@ -23,7 +24,7 @@ def test(filename):
     for i, pair in cases.items():
         args = pair[0]
         sol = pair[1]
-        tst = module.solution(*args)
+        tst = module.solution(*(copy.deepcopy(args)))
         if tst != sol:
             print("FAILED TEST CASE(%d): for input=%s\n\texpected %s(%s) \
 but got %s(%s)\n" \
