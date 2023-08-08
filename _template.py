@@ -3,8 +3,9 @@ Problem statement here.
 '''
 
 def func():
-    pass
+    #TODO: YOUR CODE BELOW
+    return None
 
-#ignore this code
+# ignore this code
 def solution(*args):
     return func(*args)
