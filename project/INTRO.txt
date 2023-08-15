@@ -1,0 +1,77 @@
+============ THE GAME ============
+Two-player Tic-Tac-Toe is a turn-based game two people can play against
+each other on the computer. We have two players (player X and player O)
+and an empty 3x3 board with positions labeled 1-9 when the game starts:
+
+ 1 | 2 | 3 
+-----------
+ 4 | 5 | 6 
+-----------
+ 7 | 8 | 9
+
+NOTE: We say player O, not 0 (letter O not number 0)
+
+Player X and player O take turns "marking" the board with their signature
+mark (an 'X' (for player X) and 'O' (for player O)) on previously unmarked
+positions only. When a player marks the board, we display the same board,
+but with 'X's and 'O's in the new position, example:
+
+    Turn 0. Player X marks an 'X' in position 5:
+
+ 1 | 2 | 3 
+-----------
+ 4 | X | 6 
+-----------
+ 7 | 8 | 9
+    
+    Turn 1. player O marks an 'O' on position 3:
+
+ 1 | 2 | O 
+-----------
+ 4 | X | 6 
+-----------
+ 7 | 8 | 9
+
+     Turn 2. player X marks an 'X' on position 1:
+
+ X | 2 | O 
+-----------
+ 4 | X | 6 
+-----------
+ 7 | 8 | 9
+ 
+    ... etc.
+    
+    The game continues until either (a.) some player wins with their
+    three marks spanning a row, colummn, or diagonal
+    (horizontally, vertically, or diagonally) or (b.) no player has won,
+    but no more unmarked positions are available.
+
+Example of a diagonal win for player X:
+ X | 2 | O 
+-----------
+ 4 | X | 6 
+-----------
+ O | 8 | X
+ 
+Example of a vertical win for player X:
+ X | 2 | O 
+-----------
+ X | O | 6 
+-----------
+ X | 8 | O
+
+Example of a horizontal win for player O:
+ O | O | O 
+-----------
+ X | 5 | X 
+-----------
+ X | 8 | X
+
+Example of a tie (no unmarked positions(numbers) left and no winner):
+ O | O | X 
+-----------
+ X | O | O 
+-----------
+ O | X | X
+==================================
